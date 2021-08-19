@@ -71,7 +71,28 @@ tabs.forEach(tab => {
 
 
 /*==================== SERVICES MODAL ====================*/
+var player = document.getElementById('player');
+let playbtn = document.getElementById('playbtn');
 
+var playpause = function (){
+    if(player.paused){
+        player.play();
+    }else{
+        player.pause();
+    }
+}
+
+playbtn.addEventListener('click', playpause);
+
+player.onplay = function(){
+    playbtn.classList.remove('uil-play');
+    playbtn.classList.add('uil-pause');
+}
+
+player.onpause = function(){
+    playbtn.classList.remove('uil-pause');
+    playbtn.classList.add('uil-play');
+}
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio__container' , {
