@@ -38,14 +38,16 @@
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
+                        
                         <li class="nav__item">
                             <a href="#fun-facts" class="nav__link">
                                 <i class="uil uil-laughing nav__icon"></i> Fun Facts
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
                             </a>
                         </li>
                         <li class="nav__item">
@@ -164,7 +166,7 @@
                 <div class="skills__container container grid">
                     <div>
 
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
                                 <div>
@@ -422,7 +424,56 @@
                     </div>
             </section>
 
-           
+           <!--==================== FUN FACTS ====================-->
+           <section class="fun-facts section" id="fun-facts">
+            <h2 class="section__title">Fun Facts about ME</h2>
+            <span class="section__subtitle">this shows how weird I am</span>
+
+            <div class="fun-facts__container container grid">
+                <div>
+                    <div class="fun-facts__content">
+                        <div class="fun-facts__header">
+                            <i class="uil uil-play fun-facts__icon" id="playbtn"></i>
+                            <div>
+                                <h1 class="fun-facts__title">My Favorite Song</h1>
+                            </div>
+                        </div>
+                        <div class="fun-facts__content-description">
+                            <audio id="player" src="assets/mp3/song_1.mp3"></audio>
+                            <span class="fun-facts__subtitle">I Could Fight on a Wall</span>
+                            <div class="fun-facts__description">This song makes me realize that there is always a way out.</div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="fun-facts__content">
+                        <div class="fun-facts__header">
+                            <a href="#"><i class="uil uil-film fun-facts__icon"></i></a>
+                            <div>
+                                <h1 class="fun-facts__title">My Favorite Movie</h1>
+                            </div>
+                        </div>
+                        <div class="fun-facts__content-description">
+                            <span class="fun-facts__subtitle">Every Child is Special</span>
+                            <div class="fun-facts__description">This film conveys a message of acceptance, patience, and care.</div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="fun-facts__content">
+                        <div class="fun-facts__header">
+                            <a href="#"><i class="uil uil-diary fun-facts__icon"></i></a>
+                            <div>
+                                <h1 class="fun-facts__title">My Favorite Poem</h1>
+                            </div>
+                        </div>
+                        <div class="fun-facts__content-description">
+                            <span class="fun-facts__subtitle">Mekanismong-Saliwa</span>
+                            <div class="fun-facts__description">My inspiration for writing this poem is a friend who acts differently because of his mental disorder. Despite of his condition, 
+                                he seems very genuinely happy by refusing to be validated by other's perspective. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
@@ -432,7 +483,7 @@
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio_1.png" alt="" class="portfolio__img">
+                            <img src="assets/img/portfolio_3.png" alt="" class="portfolio__img">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Project 1</h3>
                                 <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -458,7 +509,7 @@
                         </div>
 
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio_3.png" alt="" class="portfolio__img">
+                            <img src="assets/img/portfolio_1.png" alt="" class="portfolio__img">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Project 3</h3>
                                 <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -485,84 +536,7 @@
                 </div>
             </section>
 
-             <!--==================== FUN FACTS ====================-->
-             <section class="fun-facts section" id="fun-facts">
-                <h2 class="section__title">Fun Facts about ME</h2>
-                <span class="section__subtitle">this shows how weird I am</span>
-
-                <div class="fun-facts__container container grid">
-                    <div>
-                        <div class="fun-facts__content">
-                            <div class="fun-facts__header">
-                                <i class="uil uil-play fun-facts__icon" id="playbtn"></i>
-                                <div>
-                                    <h1 class="fun-facts__title">My Favorite Song</h1>
-                                </div>
-                            </div>
-                            <div class="fun-facts__content-description">
-                                <audio id="player" src="assets/mp3/song_1.mp3"></audio>
-                                <span class="fun-facts__subtitle">I Could Fight on a Wall</span>
-                                <div class="fun-facts__description">This song makes me realize that there is always a way out.</div>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="fun-facts__content">
-                            <div class="fun-facts__header">
-                                <a href="#"><i class="uil uil-film fun-facts__icon"></i></a>
-                                <div>
-                                    <h1 class="fun-facts__title">My Favorite Movie</h1>
-                                </div>
-                            </div>
-                            <div class="fun-facts__content-description">
-                                <span class="fun-facts__subtitle">Every Child is Special</span>
-                                <div class="fun-facts__description">This film conveys a message of acceptance, patience, and care.</div>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="fun-facts__content">
-                            <div class="fun-facts__header">
-                                <a href="#"><i class="uil uil-diary fun-facts__icon"></i></a>
-                                <div>
-                                    <h1 class="fun-facts__title">My Favorite Poem</h1>
-                                </div>
-                            </div>
-                            <div class="fun-facts__content-description">
-                                <span class="fun-facts__subtitle">Mekanismong-Saliwa</span>
-                                <div class="fun-facts__description">My inspiration for writing this poem is a friend who acts differently because of his mental disorder. Despite of his condition, 
-                                    he seems very genuinely happy by refusing to be validated by other's perspective. </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="skills__container container grid">
-                    <div>
-                        <div class="skills__content">
-                            <div class="skills__header">
-                                <i class="uil uil-film skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">My Favorite Movie</h1>
-                                    <div class="info">
-                                        Every child is Special
-                                    </div>
-
-                                    <audio id="player" src="assets/mp3/song_1.mp3"></audio>
-                                    <div class="player">
-                                        <div class="control">
-                                            <i class="uil uil-play" id="playbtn"></i>
-                                        </div>
-                                        <div class="info">
-                                            I Could Fight on a Wall - Aquilo
-                                        </div>
-                                    </div>
-                                    
-                                    <span class="skills__subtitle">This song makes me realize that there is always a way out.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </section>
+             
 
 
             <!--==================== CONTACT ME ====================-->
@@ -605,7 +579,7 @@
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
-                        <h1 class="footer__title">Celine Joie V. Buenaventura</h1>
+                        <h1 class="footer__title">Celine</h1>
                         <span class="footer__subtitle">Future Computer Engineer</span>
                     </div>
                     
