@@ -102,13 +102,8 @@ body.dark-theme {
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   margin: 0;
-  /* padding: 0;
-  margin: 0; */
 }
 
 html {
@@ -137,6 +132,14 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  padding: 2rem;
 }
 
 img {
@@ -379,6 +382,23 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+.button--flex--submit {
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.button--flex--submit:hover {
+  background-color: var(--first-color-alt);
 }
 
 /*==================== ABOUT ====================*/
@@ -688,6 +708,60 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
+
+.contact__content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.contact__input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color-light);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
@@ -952,7 +1026,7 @@ img {
     justify-content: initial;
   }
   .qualification__tabs {
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .qualification_button {
     margin: 0 var(--mb-1);
@@ -990,9 +1064,14 @@ img {
   .footer__container {
     padding: 0;
   }
+  .home__container {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
   .home__blob {
     width: 320px;
   }
+
   .portfolio__content {
     column-gap: 5rem;
   }
