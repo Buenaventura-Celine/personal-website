@@ -169,12 +169,62 @@ button {
   min-width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
 .introduction .introduction-section:nth-child(2) {
-  background: black;
+  background: #101010;
   color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+}
+
+.navbar .media li {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.navbar .media li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar .menu i {
+  padding-right: 2rem;
+}
+
+.bg-text {
+  position: fixed;
+  top: 50%;
+  left: 128%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+
+.wrapper .bg-text .text {
+  font-family: Poppins;
+  font-size: 500px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 3px #444;
+  text-transform: uppercase;
 }
