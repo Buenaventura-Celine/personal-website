@@ -34,6 +34,16 @@ body {
   background: url("../img/hero.jpg") no-repeat 50% 50%;
 }
 
+#particle-js {
+  height: 100%;
+  background: #101010;
+  color: var(--first-color);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .content {
   width: 60%;
   margin: 0 auto;
@@ -145,4 +155,26 @@ button {
 
 .myBtn:hover:before {
   top: 0;
+}
+
+.introduction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+.introduction .introduction-section {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.introduction .introduction-section:nth-child(2) {
+  background: black;
+  color: white;
 }
