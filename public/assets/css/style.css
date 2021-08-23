@@ -139,7 +139,18 @@ button {
   border: none;
   font-size: var(--normal-font-size);
   color: var(--text-color);
-  padding: 2rem;
+  font-family: var(--body-font);
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+button:hover {
+  background-color: var(--first-color-alt);
+  cursor: pointer;
 }
 
 img {
@@ -729,6 +740,15 @@ img {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+.contact {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.home {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 #status {

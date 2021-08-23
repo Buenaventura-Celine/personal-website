@@ -194,8 +194,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   
     function error() {
-      status.classList.add("error");
-      status.innerHTML = "Oops! There was a problem.";
+        alert("Hello! I am an alert box!!");
     }
   
     // handle the form submission event
