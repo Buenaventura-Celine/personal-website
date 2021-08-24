@@ -460,7 +460,8 @@ img {
   align-self: center;
 }
 
-.about__description {
+.about__description,
+.portfolio__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
 }
@@ -1157,6 +1158,9 @@ img {
     height: 853px;
   }
   .about__description {
+    text-align: initial;
+  }
+  .portfolio__description {
     margin-top: 7rem;
     text-align: justify;
   }

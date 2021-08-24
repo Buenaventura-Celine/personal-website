@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 :root {
   --header-height: 3rem;
 
@@ -34,16 +35,6 @@ body {
   background: url("../img/hero.jpg") no-repeat 50% 50%;
 }
 
-#particle-js {
-  height: 100%;
-  background: #101010;
-  color: var(--first-color);
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
 .content {
   width: 60%;
   margin: 0 auto;
@@ -77,6 +68,13 @@ body {
   padding-top: 0;
   font-style: italic;
   color: var(--first-color-lighter);
+}
+
+.navigation {
+  z-index: 3;
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
 }
 
 .overlay-2 {
@@ -157,74 +155,63 @@ button {
   top: 0;
 }
 
-.introduction {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-}
-
-.introduction .introduction-section {
-  min-width: 100%;
-  height: auto;
-  display: flex;
-  height: 100vh;
-}
-
-.introduction .introduction-section:nth-child(2) {
+#particle-js {
+  height: 100%;
   background: #101010;
-  color: white;
+  color: var(--first-color);
 }
 
-ul {
-  list-style: none;
+::-webkit-scrollbar {
+  width: 0;
 }
 
-.wrapper {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  padding: 0 30px;
-}
-
-.navbar .media li {
-  display: inline-block;
-  padding-left: 30px;
-}
-
-.navbar .media li a {
-  color: #fff;
+a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-.navbar .menu i {
-  padding-right: 2rem;
+.continue {
+  text-decoration: none;
+  border: none;
+  font-size: 12px;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
 }
 
-.bg-text {
-  position: fixed;
-  top: 50%;
-  left: 128%;
-  transform: translate(-50%, -50%);
-  opacity: 0.3;
+.continue:hover {
+  background-color: var(--first-color-alt);
+  cursor: crosshair;
 }
 
-.wrapper .bg-text .text {
-  font-family: Poppins;
-  font-size: 500px;
-  text-align: center;
-  color: transparent;
-  -webkit-text-stroke: 3px #444;
-  text-transform: uppercase;
+body {
+  overflow-x: hidden;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.transition-swipe {
+  transition: 500ms;
+  transform: translateY(0);
+}
+
+html.is-animating .transition-swipe {
+  transform: translateY(100px);
 }
