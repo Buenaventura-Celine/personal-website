@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 :root {
-  --header-height: 3rem;
-
-  /*========== Colors ==========*/
-  /* Change favorite color */
   --hue-color: 340; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
@@ -31,7 +27,7 @@ body {
 
 body {
   cursor: crosshair;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   background: url("../img/hero.jpg") no-repeat 50% 50%;
 }
 
@@ -60,7 +56,7 @@ body {
   text-align: left;
   color: #101010;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .meaning {
